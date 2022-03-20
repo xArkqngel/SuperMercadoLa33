@@ -1,0 +1,38 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.contenedor-productos{
+    text-align: center;
+    h3{
+        text-transform: uppercase;
+        padding: 2rem;
+    }
+    img{
+        margin-top: 2rem;
+        height: 10rem;
+    }
+}
+
+.productos{
+    @include m.grid(3,1rem); 
+}
+
+.ver-todos{
+    a{
+        font-size: 1.4rem;
+    }
+    display: flex;
+    justify-content: flex-end;
+}
+
+.anuncio{
+    margin-top: 3rem;
+    background-color: lighten(v.$gris,5);
+    border: 1px solid darken(v.$gris_oscuro,5) ;
+    .contenedor-productos{
+        padding: 2rem;
+    }
+    h3,p{
+        margin: 0;
+    }
+}

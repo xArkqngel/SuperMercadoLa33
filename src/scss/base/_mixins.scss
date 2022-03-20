@@ -1,11 +1,15 @@
-@mixin boton {
-    background-color: $verde;
+@mixin boton($bgColor) {
+    background-color: $bgColor;
     color: azure;
     font-weight: bold;
     text-decoration: none;
     padding: 1rem 3rem;
     text-align: center;
-    margin-top: $separacion /2;
+    margin-top: 1rem;
+
+    &:hover{
+        background-color: darken($bgColor,5);
+    }
 }
 
 @mixin grid($columna, $espaciado) {

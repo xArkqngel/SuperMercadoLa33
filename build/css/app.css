@@ -351,6 +351,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: #eeeeee;
 }
 
 p {
@@ -383,8 +384,21 @@ h3 {
   font-size: 2rem;
 }
 
+.boton-amarillo {
+  background-color: #f0bf4c;
+  color: azure;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.boton-amarillo:hover {
+  background-color: #eeb734;
+}
+
 .header {
-  background-color: #2aaa50;
+  background-color: #32ca5f;
 }
 .header h1 {
   color: azure;
@@ -430,4 +444,42 @@ h3 {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedor-productos {
+  text-align: center;
+}
+.contenedor-productos h3 {
+  text-transform: uppercase;
+  padding: 2rem;
+}
+.contenedor-productos img {
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+.productos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ver-todos {
+  display: flex;
+  justify-content: flex-end;
+}
+.ver-todos a {
+  font-size: 1.4rem;
+}
+
+.anuncio {
+  margin-top: 3rem;
+  background-color: #c5eabb;
+  border: 1px solid rgba(169, 222, 154, 0.774);
+}
+.anuncio .contenedor-productos {
+  padding: 2rem;
+}
+.anuncio h3, .anuncio p {
+  margin: 0;
 }
