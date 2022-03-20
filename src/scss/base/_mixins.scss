@@ -1,0 +1,15 @@
+@mixin boton {
+    background-color: $verde;
+    color: azure;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: $separacion /2;
+}
+
+@mixin grid($columna, $espaciado) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columna,1fr);
+}

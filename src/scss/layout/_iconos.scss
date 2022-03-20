@@ -1,0 +1,21 @@
+@use 'base/mixins' as m;
+
+.seccion{
+    text-align: center;
+    img{
+        height: 10rem;
+    }
+    h3{
+        margin: 0;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+    p{
+        margin: 0;
+    }
+}
+
+.iconos-nosotros{
+    @include m.grid(3,1rem)
+}
+
