@@ -1,7 +1,6 @@
 const{src,dest,watch} = require('gulp');
 const sass= require('gulp-sass')(require('sass'));
 const plumber= require('gulp-plumber');
-
 function css(done){
     src('src/scss/**/*.scss')//ubica
         .pipe(plumber())
@@ -16,4 +15,4 @@ function dev(done){
 }
 
 exports.css=css;
-exports.dev=dev;
+exports.dev= dev;

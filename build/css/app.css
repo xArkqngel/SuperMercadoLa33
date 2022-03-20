@@ -360,8 +360,12 @@ p {
 
 .contenedor {
   width: 95%;
-  max-width: 120rem;
+  max-width: 150rem;
   margin: 0 auto;
+}
+.contenedor .imagen {
+  max-width: 120rem;
+  align-items: center;
 }
 
 a {
@@ -422,11 +426,12 @@ h3 {
   font-size: 1.6rem;
 }
 .navegacion a:hover {
-  color: violet;
+  color: #f0bf4c;
 }
 
 .seccion {
   text-align: center;
+  padding-top: 3rem;
 }
 .seccion img {
   height: 10rem;
@@ -448,6 +453,7 @@ h3 {
 
 .contenedor-productos {
   text-align: center;
+  padding-top: 3rem;
 }
 .contenedor-productos h3 {
   text-transform: uppercase;
@@ -482,4 +488,12 @@ h3 {
 }
 .anuncio h3, .anuncio p {
   margin: 0;
+}
+
+.imagen {
+  padding-top: 3rem;
+}
+.imagen img {
+  align-items: center;
+  height: 30rem;
 }

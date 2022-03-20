@@ -21,9 +21,14 @@ p{
 
 .contenedor{
     width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;    
+    max-width: 150rem;
+    margin: 0 auto; 
+    .imagen{
+        max-width: 120rem;
+        align-items: center;
+    }   
 }
+
 
 a{
     text-decoration: none;
