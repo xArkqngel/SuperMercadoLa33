@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+
+.table{
+    width: 100%;
+    border: 1px solid;
+    text-align: left;
+    font-size: 2rem;
+    border-collapse: collapse;
+    padding: 1rem;
+    th{
+        background-color: v.$verde;
+        text-transform: uppercase;
+        letter-spacing: 2%;
+        color: azure;
+    }
+}
+
+.btntable{
+    text-align: end;
+    background-color: aqua;
+}
+
