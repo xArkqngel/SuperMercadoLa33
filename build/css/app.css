@@ -408,6 +408,7 @@ h3 {
   color: azure;
   text-align: center;
   margin: 0;
+  text-decoration: none;
 }
 .header .contenido-header {
   display: flex;
@@ -421,6 +422,7 @@ h3 {
   gap: 2rem;
 }
 .navegacion a {
+  text-decoration: none;
   text-align: center;
   color: azure;
   font-size: 1.6rem;
@@ -496,4 +498,24 @@ h3 {
 .imagen img {
   align-items: center;
   height: 30rem;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid;
+  text-align: left;
+  font-size: 2rem;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+.table th {
+  background-color: #32ca5f;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  color: azure;
+}
+
+.btntable {
+  text-align: end;
+  background-color: aqua;
 }
