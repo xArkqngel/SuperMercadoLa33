@@ -30,12 +30,12 @@
                 </div>
                 <div class="card">
                     <img src="src/img/icono2.svg" alt="Icono borrar" loading="lazy">
-                    <button class="button">Borrar un producto</button>
+                    <a class="button">Borrar un producto</a>
                     
                 </div>
                 <div class="card">
                     <img src="src/img/icono3.svg" alt="Icono actualizar" loading="lazy">
-                    <button class="button">Actualiza un producto</button>
+                    <a class="button">Actualiza un producto</a>
                 </div>
             </div>
             <div class="overlay" id="divOne">
@@ -52,11 +52,18 @@
 
                     <label for="expire-date">Fecha de vencimiento</label>
                     <input type="date" id="expire-date">
-
+                    
                     <label for="type">Tipo </label>
-                    <input type="text" placeholder="Limpieza" id="type">
+                    <select name="cupons" id="cupons">
+                      <option value="0"></option>
+                      <option value="1">Limpieza</option>
+                      <option value="2">Licor</option>
+                      <option value="3">Comida</option>
+                      <option value="4">Aseo personal</option>
+                    </select>
+                    <!-- <input type="text" placeholder="Limpieza" id="type"> -->
 
-                    <button class="buttonForm">
+                    <button class="buttonForm" onsubmit="window.alert()">
                       <p>Agregar</p
                     ></button>
                   </form>

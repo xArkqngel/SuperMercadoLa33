@@ -514,6 +514,7 @@ h3 {
 
 .button {
   border: none;
+  border-radius: 8px;
   /* color: #000000; */
   color: #240911;
   font-size: 2.6rem;
@@ -522,11 +523,10 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  background-color:#78c75d ;
 }
 .button:hover{
-  /* color: #b4a3a3;
-   */
-   color: #9b6c6e;
+  color: #f0f0f0;
 }
 
 .overlay{
@@ -632,5 +632,11 @@ input::placeholder{
 }
 
 .buttonForm:hover{
-  background-color:#dbdada ;
+  background-color:#f3f3f3 ;
+}
+
+option{
+  
+  text-align: center;
+  padding: 0;
 }
