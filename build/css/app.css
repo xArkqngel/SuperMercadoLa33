@@ -188,9 +188,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -198,9 +198,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -209,9 +209,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -261,8 +261,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -272,8 +272,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -281,7 +281,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -291,7 +291,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -372,7 +372,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0 5rem 0;
 }
 
@@ -380,7 +382,8 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
+h2
+ {
   font-size: 2.6rem;
 }
 
@@ -438,8 +441,8 @@ h3 {
 .seccion img {
   height: 10rem;
 }
-.seccion h3 {
-  margin: 0;
+.seccion h2 {
+  margin: 8px;
   padding: 1rem;
   text-transform: uppercase;
 }
@@ -488,7 +491,8 @@ h3 {
 .anuncio .contenedor-productos {
   padding: 2rem;
 }
-.anuncio h3, .anuncio p {
+.anuncio h3,
+.anuncio p {
   margin: 0;
 }
 
@@ -518,4 +522,142 @@ h3 {
 .btntable {
   text-align: end;
   background-color: aqua;
+}
+.card {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.card p {
+  justify-self: flex-end;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  /* color: #000000; */
+  color: #240911;
+  font-size: 2.6rem;
+  margin: 8px;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background-color:#78c75d ;
+}
+.button:hover{
+  color: #f0f0f0;
+}
+
+.overlay{
+  position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.wrapper {
+	margin: 70px auto;
+	padding: 20px;
+	background: #e7e7e7;
+	border-radius: 5px;
+	width: 400px;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.wrapper h2 {
+	margin-top: 0;
+	color: #333;
+}
+.wrapper .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.wrapper .close:hover {
+	color: #06D85F;
+}
+.wrapper .content {
+	max-height: 30%;
+	overflow: auto;
+}
+/*form*/
+
+.container {
+	border-radius: 5px;
+	background-color: #e7e7e7;
+	padding: 20px 0;
+}
+form label {
+	font-weight: bold;
+  font-size: 16px;	
+}
+.formOverlay{
+  display: grid;
+  place-items: center;
+  gap: 12px;
+}
+
+input[type=text],[type=number],[type=date], select, textarea {
+	width: 200px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-sizing: border-box;	
+	resize: vertical;
+  font-size: 16px;
+  text-align: center;
+}
+input[type="submit"] {
+	background-color: #413b3b;
+	color: #fff;
+	padding: 15px 50px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+input::placeholder{
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.5; 
+
+}
+
+.buttonForm{
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #06212a;
+  background-color: #e4e3e3;
+  cursor: pointer;
+}
+
+.buttonForm:hover{
+  background-color:#f3f3f3 ;
+}
+
+option{
+  
+  text-align: center;
+  padding: 0;
 }

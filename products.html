@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Supermercado La 33</title>
+        <!-- <link rel="stylesheet" href="src/css/products.css"> -->
+        <link rel="stylesheet" href="build/css/app.css">
+    </head>
+    <body>
+        <header class="header inicio">
+            <div class="contenedor contenido-header">
+               <h1>Supermercado La 33</h1>
+
+               <nav class="navegacion">
+                   <a href="#">Productos</a>
+                   <a href="#">Carrito</a>
+                   <a href="#">Factura</a>
+               </nav>
+            </div>
+        </header>        
+
+        <section class="contenedor seccion">
+            <h1>¡Administra tus productos!</h1>
+    
+            <div class="iconos-nosotros">
+                <div class="card">
+                    <img src="src/img/icono1.svg" alt="Icono borrar" loading="lazy">
+                    <a class="button" href="#divOne" >Añade un producto</a>
+                </div>
+                <div class="card">
+                    <img src="src/img/icono2.svg" alt="Icono borrar" loading="lazy">
+                    <a class="button">Borrar un producto</a>
+                    
+                </div>
+                <div class="card">
+                    <img src="src/img/icono3.svg" alt="Icono actualizar" loading="lazy">
+                    <a class="button">Actualiza un producto</a>
+                </div>
+            </div>
+            <div class="overlay" id="divOne">
+              <div class="wrapper">
+                <h2 style="margin-bottom: 24px;">Agrega tu producto</h2>
+                <a href="#" class="close"></a>
+                <div class="content">
+                  <form action="#" class="formOverlay" id="formOverlay">
+                    <label for="productName">Nombre producto</label>
+                    <input type="text" placeholder="Suavitel" id="productName">
+
+                    <label for="price">Precio</label>
+                    <input type="number" placeholder="1000" id="price">
+
+                    <label for="expire-date">Fecha de vencimiento</label>
+                    <input type="date" id="expire-date">
+                    
+                    <label for="type">Tipo </label>
+                    <select name="cupons" id="cupons">
+                      <option value="0"></option>
+                      <option value="1">Limpieza</option>
+                      <option value="2">Licor</option>
+                      <option value="3">Comida</option>
+                      <option value="4">Aseo personal</option>
+                    </select>
+                    <!-- <input type="text" placeholder="Limpieza" id="type"> -->
+
+                    <button class="buttonForm" onsubmit="window.alert()">
+                      <p>Agregar</p
+                    ></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </main>        
+
+        </section>
+        <script async src="./src/js/getData.js"></script>
+
+    </body>
+</html>
