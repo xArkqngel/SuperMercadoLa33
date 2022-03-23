@@ -13,4 +13,4 @@ let myArr = [
   new User('Emily', 'Knowles', 'San Francisco', 'emilyknow@gmail.com')
 ]
 
-document.querySelector("#myTable tbody").innerHTML = myArr.map(user => `<tr><td>${user.name}</td><td>${user.lastname}</td><td>${user.city}</td><td>${user.email}</td></tr>`).join('')
+document.querySelector("#myTable tbody").innerHTML = myArr.map(user => `<tr><td>${user.name}</td><td>${user.lastname}</td><td>${user.city}</td><td><button>TEst</button></td></tr>`).join('')
