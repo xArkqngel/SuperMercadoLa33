@@ -38,28 +38,18 @@
                 <a href="#" class="close">X</a>
                 <div class="content">
                   <form action="#" class="formOverlay" id="formOverlay">
+
                     <label for="productName">Nombre producto</label>
                     <input type="text" placeholder="Suavitel" id="productName">
 
                     <label for="price">Precio</label>
-                    <input type="number" placeholder="1000" id="price">
-
-                    <label for="expire-date">Fecha de vencimiento</label>
-                    <input type="date" id="expire-date">
-                    
+                    <input type="number" placeholder="1000" id="price">                    
                     <label for="type">Tipo </label>
-                    <select name="cupons" id="cupons">
-                      <option value="0"></option>
-                      <option value="1">Limpieza</option>
-                      <option value="2">Licor</option>
-                      <option value="3">Comida</option>
-                      <option value="4">Aseo personal</option>
-                    </select>
+                   
                     <!-- <input type="text" placeholder="Limpieza" id="type"> -->
 
-                    <button class="buttonForm" onsubmit="window.alert()">
-                      <p>Agregar</p
-                    ></button>
+                                       
+                    <button  class="buttonForm" onclick="getDataFromForm()">Agregar producto</button>
                   </form>
                 </div>
               </div>
@@ -68,6 +58,7 @@
 
         </section>
         <script async src="./src/js/getData.js"></script>
+        <script src="./src/js/getData.js"></script>
 
     </body>
 </html>

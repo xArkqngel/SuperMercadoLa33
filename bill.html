@@ -13,7 +13,7 @@
       <div class="contenedor contenido-header">
         <a href="index.html">
           <h1>Supermercado La 33</h1>
-      </a>
+        </a>
 
         <nav class="navegacion">
           <a href="products.html">Productos</a>
@@ -24,28 +24,37 @@
     </header>
 
     <div class="contenedor panel">
-    <h1>Más Sobre Nosotros</h1>
+      <h1>Más Sobre Nosotros</h1>
       <section class="container">
         <form action="/" class="form">
           <label for="InputName">Ingrese su nombre</label>
-          <input type="text" name="InputName" id="InputName" class="input-text" />
+          <input
+            type="text"
+            name="InputName"
+            id="InputName"
+            class="input-text"
+          />
         </form>
 
         <div class="bill-Info">
           <p id="date" onload="date()"></p>
-            <div class="ver-todos">
+          <div class="ver-todos">
             <button class="boton-amarillo">Generar Factura</button>
-            </div>
+          </div>
           <ul class="item-list"></ul>
         </div>
       </section>
     </div>
+    <section>     
+      <div class="factura">
+        
+      </div>
+    </section>
     <script>
       const date = () => {
         let p = document.getElementById("date");
-        p.text = " "+ Date.now();
+        p.text = " " + Date.now();
         console.log(p);
-
       };
     </script>
   </body>

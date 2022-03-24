@@ -1,11 +1,13 @@
-const getDataFromForm = (idForm)=>{
-  const productName = getDataById(idForm);
+function getDataFromForm(){
+  const productName = document.getElementById("productName").value;
+  console.log(productName);
+  price();
+};
+
+function price(){
+  const productName = document.getElementById("price").value;
   console.log(productName);
 };
 
 
-function getDataById(id){
-  const data = document.getElementById(id);  
-}
 
-console.log(getDataFromForm("formOverlay"));
