@@ -7,6 +7,17 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./build/css/app.css" />
+    <style>
+      #productos{
+        text-align: center;
+      }
+      #nombre{
+        text-align: center;
+      }
+      #precio{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header class="header inicio">
@@ -39,7 +50,7 @@
         <div class="bill-Info">
           <p id="date" onload="date()"></p>
           <div class="ver-todos">
-            <button class="boton-amarillo">Generar Factura</button>
+            <button class="boton-amarillo" onclick="printCart()">Generar Factura</button>
           </div>
           <ul class="item-list"></ul>
         </div>
@@ -47,7 +58,10 @@
     </div>
     <section>     
       <div class="factura">
-        
+
+        <p id="nombre"></p>
+        <p id="productos"></p>
+        <p id="precio"></p>
       </div>
     </section>
     <script>
@@ -57,5 +71,6 @@
         console.log(p);
       };
     </script>
+    <script src="./src/js/lista.js"></script>
   </body>
 </html>
