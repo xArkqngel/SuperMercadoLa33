@@ -1,6 +1,7 @@
 @use 'base/variables' as v;
 
 .panel{
+    padding-top: 2rem;
     text-align: center;
     .container{
         text-align: left;
@@ -8,12 +9,18 @@
     }
 }
 .form{
-    padding-left: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-text{
+    margin-left: 2rem;
+    height: 4rem;
 }
 
 .ver-todos{
     padding-right: 2rem;
-
     .boton-amarillo{
         font-size: 1.6rem;
     }

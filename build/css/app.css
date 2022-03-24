@@ -641,6 +641,7 @@ option {
 }
 
 .panel {
+  padding-top: 2rem;
   text-align: center;
 }
 .panel .container {
@@ -649,7 +650,14 @@ option {
 }
 
 .form {
-  padding-left: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  margin-left: 2rem;
+  height: 4rem;
 }
 
 .ver-todos {
