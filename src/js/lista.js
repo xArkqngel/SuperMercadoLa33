@@ -1,16 +1,22 @@
-function User(name, lastname, city, email) {
+function User(name, price, city, email) {
   this.name = name;
-  this.lastname = lastname;
-  this.city = city;
-  this.email = email;
+  this.price = price;
 }
 
+
 let myArr = [
-  new User('Leonardo', 'Parigini', 'Santorini', 'leoparigini@gmail.com'),
-  new User('Edoardo', 'Merlini', 'Monaco', 'edomerlini@gmail.com'),
-  new User('Nicole', 'De Lellis', 'Milano', 'nickydelellis@gmail.com'),
-  new User('Jasmine', 'Scherzinger', 'Los Angeles', 'jazzylax@gmail.com'),
-  new User('Emily', 'Knowles', 'San Francisco', 'emilyknow@gmail.com')
+  new User('Poker', '3500'),
+  new User('Suavitel', '12000'),
+  new User('Arroz Diana', '6000'),
+  new User('Doña Gallina', '600'),
+  new User('Cerveza', '3500')
 ]
 
-document.querySelector("#myTable tbody").innerHTML = myArr.map(user => `<tr><td>${user.name}</td><td>${user.lastname}</td><td>${user.city}</td><td><button>TEst</button></td></tr>`).join('')
+document.querySelector("#myTable tbody").innerHTML = myArr.map(user => `<tr><td>${user.name}</td><td>${user.price}</td><td><div class="counter">
+      <span class="down" onClick='decreaseCount(event, this)'>-</span>
+      <input type="text" value="1">
+      <span class="up"  onClick='increaseCount(event, this)'>+</span>
+    </div></td></tr>`).join('');
+
+
+
