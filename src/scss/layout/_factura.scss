@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+
+.panel{
+    text-align: center;
+    .container{
+        text-align: left;
+        background-color: v.$gris;
+    }
+}
+.form{
+    padding-left: 2rem;
+}
+
+.ver-todos{
+    padding-right: 2rem;
+
+    .boton-amarillo{
+        font-size: 1.6rem;
+    }
+}

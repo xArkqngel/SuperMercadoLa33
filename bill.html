@@ -16,23 +16,24 @@
         <nav class="navegacion">
           <a href="products.html">Productos</a>
           <a href="carrito.html">Carrito</a>
-          <a href="/bill.html">Factura</a>
+          <a href="bill.html">Factura</a>
         </nav>
       </div>
     </header>
 
+    <div class="contenedor panel">
     <h1>Más Sobre Nosotros</h1>
-    <div class="panel">
       <section class="container">
-        <form action="/">
+        <form action="/" class="form">
           <label for="InputName">Ingrese su nombre</label>
           <input type="text" name="InputName" id="InputName" />
         </form>
 
-        <div class="billInfo">
-          <h2 id="clientName"></h2>
+        <div class="bill-Info">
           <p id="date" onload="date()"></p>
-          <button>Genera tu factura</button>
+            <div class="ver-todos">
+            <button class="boton-amarillo">Generar Factura</button>
+            </div>
           <ul class="item-list"></ul>
         </div>
       </section>

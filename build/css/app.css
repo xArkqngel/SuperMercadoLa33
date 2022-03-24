@@ -396,9 +396,24 @@ h3 {
   padding: 1rem 3rem;
   text-align: center;
   margin-top: 1rem;
+  border-color: #eeb734;
 }
 .boton-amarillo:hover {
   background-color: #eeb734;
+}
+
+.boton-verde {
+  background-color: #32ca5f;
+  color: azure;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  border-color: #2db655;
+}
+.boton-verde:hover {
+  background-color: #2db655;
 }
 
 .header {
@@ -623,6 +638,25 @@ option {
 .btntable {
   text-align: end;
   background-color: aqua;
+}
+
+.panel {
+  text-align: center;
+}
+.panel .container {
+  text-align: left;
+  background-color: #b4e4a7;
+}
+
+.form {
+  padding-left: 2rem;
+}
+
+.ver-todos {
+  padding-right: 2rem;
+}
+.ver-todos .boton-amarillo {
+  font-size: 1.6rem;
 }
 
 .contenedor-productos {
