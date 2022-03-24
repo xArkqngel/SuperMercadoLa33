@@ -1,0 +1,140 @@
+@use 'base/variables' as v;
+
+.button {
+    border: none;
+    border-radius: 8px;
+    /* color: #000000; */
+    color: #240911;
+    font-size: 2.6rem;
+    margin: 8px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: v.$gris;
+  }
+  .button:hover{
+    color: v.$verde;
+  }
+  
+  .overlay{
+    position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.8);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+  }
+  
+  .overlay:target{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .wrapper {
+      margin: 70px auto;
+      padding: 20px;
+      background: #e7e7e7;
+      border-radius: 5px;
+      width: 400px;
+      position: relative;
+      transition: all 5s ease-in-out;
+  }
+  .wrapper h2 {
+      margin-top: 0;
+      color: #333;
+  }
+  .wrapper .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+  }
+  .wrapper .close:hover {
+      color: #06D85F;
+  }
+  .wrapper .content {
+      max-height: 30%;
+      overflow: auto;
+  }
+  //form/
+  
+  .container {
+      border-radius: 5px;
+      background-color: #e7e7e7;
+      padding: 20px 0;
+  }
+  form label {
+      font-weight: bold;
+    font-size: 16px;	
+  }
+  .formOverlay{
+    display: grid;
+    place-items: center;
+    gap: 12px;
+  }
+  
+  input[type=text],[type=number],[type=date], select, textarea {
+      width: 200px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;	
+      resize: vertical;
+    font-size: 16px;
+    text-align: center;
+  }
+  input[type="submit"] {
+      background-color: #413b3b;
+      color: #fff;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+  }
+  
+  input::placeholder{
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.5; 
+  
+  }
+  
+  .buttonForm{
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #06212a;
+    background-color: #e4e3e3;
+    cursor: pointer;
+  }
+  
+  .buttonForm:hover{
+    background-color:#f3f3f3 ;
+  }
+  
+  option{
+    
+    text-align: center;
+    padding: 0;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  .card p {
+    justify-self: flex-end;
+  }
