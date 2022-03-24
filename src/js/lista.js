@@ -14,7 +14,7 @@ let myArr = [
 
 document.querySelector("#myTable tbody").innerHTML = myArr.map(user => `<tr><td>${user.name}</td><td>${user.price}</td><td><div class="counter">
       <span class="down" onClick='decreaseCount(event, this)'>-</span>
-      <input type="text" value="1">
+      <input type="text" value="0">
       <span class="up"  onClick='increaseCount(event, this)'>+</span>
     </div></td></tr>`).join('');
 
