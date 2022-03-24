@@ -12,11 +12,14 @@
         margin-top: 2rem;
         height: 10rem;
     }
+    
 }
 
 .productos{
     @include m.grid(3,1rem); 
 }
+
+
 
 .ver-todos{
     a{
