@@ -1,7 +1,7 @@
 const Market = require("./Market.js")
 const Product = require("./Product.js")
 
-class Bill{
+module.exports = class Bill{
 
     constructor(nameClient){
         this.nameClient =  nameClient;

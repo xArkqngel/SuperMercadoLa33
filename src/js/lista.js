@@ -1,7 +1,6 @@
-function producto(name, price,) {
-  this.name = name;
-  this.price = price;
-}
+const Product = require("./Product.js");
+const Market = require("./Market.js");
+const Bill = require("./Bill.js");
 
 
 let myArr = [
